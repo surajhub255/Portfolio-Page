@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#left {
+    background-color: whitesmoke;
+}
+
+#right {
+    background-color: rgb(51, 51, 51);
+}
+
+.section {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+#card {
+    position: absolute;
+    background-color: brown;
+    border-radius: 40px;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    /*  -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+}
+
+#heading {
+    color: rgb(51, 51, 51);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: 30%;
+    left: 4%;
+    border-top: 3px solid rgb(51, 51, 51);
+}
+
+#caption {
+    color: rgb(51, 51, 51);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 30%;
+    left: 4%;
+}
+
+.btn {
+    width: 30px;
+    margin-top: 30px;
+    margin-right: 25px;
+    border: 3px solid rgb(51, 51, 51);
+    border-radius: 500px;
+    padding: 1px;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    filter: invert(45%);
+}
+
+#skills {
+    width: max-content;
+    color: whitesmoke;
+    position: relative;
+    top: 45%;
+    left: 30%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#skills p {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #card {
+        position: absolute;
+        border-radius: 40px;
+        width: 50%;
+        top: 5%;
+        left: 50%;
+        /*  -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%); */
+        transform: translate(-50%, 0%);
+    }
+    #heading {
+        color: rgb(51, 51, 51);
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        position: relative;
+        top: 50%;
+        left: 0%;
+        padding-right: 4%;
+        border-top: 3px solid rgb(51, 51, 51);
+        text-align: right;
+    }
+    #caption {
+        color: rgb(51, 51, 51);
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        top: 50%;
+        left: 0%;
+        font-size: 12px;
+        padding-right: 4%;
+        text-align: right;
+    }
+    #skills {
+        padding-left: 10px;
+        width: 100%;
+        color: whitesmoke;
+        position: relative;
+        top: 50%;
+        left: 0%;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        border-top: 3px solid whitesmoke;
+    }
+    #skills p {
+        width: max-content;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .skill-item {
+        width: max-content;
+    }
+    .btn {
+        width: 20px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border: 2px solid rgb(51, 51, 51);
+        border-radius: 500px;
+        transition: all 0.4s ease-in-out;
+    }
+}
